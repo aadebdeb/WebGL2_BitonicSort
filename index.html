@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bitonic Sort By WebGL2 GPGPU</title>
+    </head>
+    <body>
+        <canvas id="canvas" width="512" height="512"></canvas>
+        <p>Size: <select id="select-size">
+            <option value="4">16</option>
+            <option value="5">32</option>
+            <option value="6">64</option>
+            <option value="7">128</option>
+            <option value="8">256</option>
+            <option value="9">512</option>
+        </select></p>
+        <p><input type="button" id="button-reset" value="Reset"></p>
+        <p><input type="button" id="button-run" value="Run Animation"></p>
+        <p><input type="button" id="button-measure" value="Measure Time"></p>
+        <p><span id="span-time"></span></p>
+        <p><span id="span-drawcall"></span></p>
+        <script src="./main.js" defer></script>
+    </body>
+</html>
